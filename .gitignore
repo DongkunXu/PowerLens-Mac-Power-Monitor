@@ -1,0 +1,23 @@
+# Build products (scripts/clean.sh removes them)
+.build/
+build/
+*.zip
+*.zip.sha256
+
+# SwiftPM / Xcode
+.swiftpm/
+Package.resolved
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+DerivedData/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# macOS
+.DS_Store
+._*
