@@ -5,7 +5,7 @@
   <a href="README.zh-CN.md"><img alt="简体中文" src="https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-6e7781?style=for-the-badge"></a>
 </p>
 
-PowerLens lives in your menu bar and shows which apps are drawing power on your Apple Silicon Mac, and how many watts each one uses. You get CPU, GPU and Neural Engine power for every app, right next to the power of the whole machine. Use it to find what drains your battery while you work: background automation, AI agents, a build script stuck in a loop, containers you forgot about.
+PowerLens is a menu-bar app for Apple Silicon Macs. It shows the power draw of each app, split into CPU, GPU and Neural Engine, together with the total system power. You can use it to see which processes use the most energy, for example background automation, AI agents or containers.
 
 <p align="center">
   <picture>
@@ -23,7 +23,7 @@ PowerLens lives in your menu bar and shows which apps are drawing power on your 
 - **Chart of the top 3 or 5 apps** over the last 5 or 15 minutes. Each app keeps its color while it stays on the chart.
 - **Top 10 list.** Click an app to see its child processes with their command lines and working directories. OrbStack and Docker Desktop also show each container.
 - **Sleep blockers**: the processes currently keeping your Mac awake.
-- **Light on resources.** PowerLens runs as a regular app with normal user permissions, reads everything locally and keeps its history in memory. The footer shows its own power use, about 0.001 W while the panel is closed.
+- **Resource use**: PowerLens runs with normal user permissions, reads all data locally and keeps its history in memory. The footer shows its own power use, about 0.001 W while the panel is closed.
 - Interface in English and Simplified Chinese.
 
 ## Reading the panel
