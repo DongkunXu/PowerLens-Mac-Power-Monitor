@@ -1,3 +1,5 @@
+<img src="docs/images/icon.png" width="96" alt="PowerLens icon" align="right">
+
 # PowerLens - Mac Power Monitor
 
 <p>

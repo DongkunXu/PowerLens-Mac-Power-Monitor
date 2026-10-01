@@ -11,6 +11,8 @@
     </array>
     <key>CFBundleExecutable</key>
     <string>PowerLens</string>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
     <key>CFBundleIdentifier</key>
     <string>io.github.dongkunxu.PowerLens</string>
     <key>CFBundleInfoDictionaryVersion</key>

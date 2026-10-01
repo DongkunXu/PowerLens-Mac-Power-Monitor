@@ -2,6 +2,11 @@
 
 All notable changes to PowerLens are listed here. Versions follow [Semantic Versioning](https://semver.org).
 
+## Unreleased
+
+- App icon.
+- The staged build copy of the app is kept out of Spotlight and removed after installing or packaging, so only the installed app shows up in Spotlight and Launchpad.
+
 ## 1.0.0 (2026-09-25)
 
 First public release.

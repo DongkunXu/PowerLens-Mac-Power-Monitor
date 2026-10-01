@@ -15,3 +15,16 @@ _powerlens_cleanup_tmp() {
     fi
 }
 trap _powerlens_cleanup_tmp EXIT
+
+# The app bundle is staged in a ".noindex" folder: Spotlight skips it, so a build copy never
+# shows up next to the installed app. Installing and packaging remove it when they are done.
+STAGED_APP="$ROOT/build/stage.noindex/PowerLens.app"
+LSREGISTER=/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister
+
+_powerlens_remove_staged_app() {
+    if [[ -d "$STAGED_APP" ]]; then
+        "$LSREGISTER" -u "$STAGED_APP" 2>/dev/null || true
+    fi
+    rm -rf "${STAGED_APP:h}"
+    rmdir "$ROOT/build" 2>/dev/null || true
+}
