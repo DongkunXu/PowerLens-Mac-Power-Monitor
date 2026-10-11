@@ -49,12 +49,9 @@ PowerLens was built and validated on an M5 Pro running macOS 27. The same data s
 
 1. Download `PowerLens-<version>.zip` from the [latest release](https://github.com/DongkunXu/PowerLens-Mac-Power-Monitor/releases/latest) and unzip it.
 2. Move `PowerLens.app` to Applications.
-3. Open it. macOS blocks the first launch because the app isn't notarized by Apple (notarization requires a paid developer account). To allow it, pick one:
-   - Go to **System Settings → Privacy & Security**, scroll to the message about PowerLens, click **Open Anyway** and confirm.
-   - Run this in Terminal: `xattr -dr com.apple.quarantine /Applications/PowerLens.app`
+3. Open it, then click the PowerLens icon (a bolt in a circle) in the menu bar.
 
-   All the source code is in this repository if you'd like to read it or build the app yourself.
-4. Click the PowerLens icon (a bolt in a circle) in the menu bar.
+Releases are signed with a Developer ID and notarized by Apple, and they open like any other downloaded app.
 
 ### Build from source
 

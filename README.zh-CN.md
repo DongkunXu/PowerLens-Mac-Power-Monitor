@@ -49,12 +49,9 @@ PowerLens 是在 M5 Pro、macOS 27 上开发和验证的。更早的芯片和 ma
 
 1. 从[最新版本](https://github.com/DongkunXu/PowerLens-Mac-Power-Monitor/releases/latest)下载 `PowerLens-<版本号>.zip` 并解压。
 2. 把 `PowerLens.app` 拖进「应用程序」。
-3. 打开它。这个 app 没有经过 Apple 公证（公证需要付费开发者账号），第一次打开会被系统拦下。放行方法二选一：
-   - 打开「**系统设置 → 隐私与安全性**」，往下找到 PowerLens 的提示，点「**仍要打开**」并确认。
-   - 在终端运行：`xattr -dr com.apple.quarantine /Applications/PowerLens.app`
+3. 打开它，然后点菜单栏里的 PowerLens 图标（圆圈里一道闪电）。
 
-   完整源码就在这个仓库里，想先看代码或者自己编译都可以。
-4. 点菜单栏里的 PowerLens 图标（圆圈里一道闪电）。
+发布版用 Developer ID 签名并经过 Apple 公证，和其他下载的 app 一样可以直接打开。
 
 ### 从源码编译
 

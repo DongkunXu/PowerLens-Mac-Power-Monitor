@@ -19,7 +19,7 @@ Build, test and run everything through `scripts/`. The scripts point `TMPDIR` at
 | `scripts/cli.sh [seconds] [--range minutes] [--toggle open,closed]` | Prints the panel's data as text once per second. Each update also checks that completed chart points never change or move (both counts must stay 0) and reports any gap at the left edge of the tile curves. `--toggle` simulates opening and closing the panel repeatedly |
 | `scripts/snapshot.sh [options]` | Renders the real panel with live data to PNG (light and dark) in `.build/snapshots/`. Options: `--language en\|zh-Hans`, `--range 5\|15`, `--top 3\|5`, `--expand N`, `--seconds N`, `--assertions` |
 | `scripts/validate.sh` | Re-checks the data sources against hardware counters (about 2 minutes, lid open, briefly loads CPU, GPU and Neural Engine). Run it after a macOS update or on a new chip |
-| `scripts/package-release.sh` | Builds the app and writes `build/PowerLens-<version>.zip` plus its SHA-256 |
+| `scripts/package-release.sh` | Builds the release: signs the app with the maintainer's Developer ID (hardened runtime, secure timestamp), notarizes it, staples the ticket and writes `build/PowerLens-<version>.zip` plus its SHA-256. Needs that certificate and a notarytool keychain profile; see the variables at the top of the script |
 | `scripts/make-icon.sh` | Regenerates `Resources/AppIcon.icns` and `docs/images/icon.png` from `tools/icon/make_icon.swift`. Only needed after changing the icon |
 | `scripts/clean.sh` | Deletes all build products (`.build/`, `build/`) |
 | `scripts/uninstall.sh` | Removes the installed app, its login item, settings and caches |

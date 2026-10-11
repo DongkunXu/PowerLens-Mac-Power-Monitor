@@ -2,6 +2,10 @@
 
 All notable changes to PowerLens are listed here. Versions follow [Semantic Versioning](https://semver.org).
 
+## 1.0.2 (2026-10-11)
+
+- Releases are signed with a Developer ID and notarized by Apple. They open directly, without the Privacy & Security step.
+
 ## 1.0.1 (2026-10-01)
 
 - App icon.
